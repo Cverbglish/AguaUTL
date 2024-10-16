@@ -6,15 +6,6 @@
     <title>Dia Cero</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- SERVICIO DE EMAILS-->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-        emailjs.init("TU_USER_ID"); // Reemplaza TU_USER_ID por el ID que te proporcionen al registrarte
-    })();
-    </script>
-
 </head>
 <body>
 
@@ -278,22 +269,22 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contacto</h2>
 
-        <form action="">
+        <form action="https://formsubmit.co/culturaecoactiva@gmail.com" method="POST">
             <div class="input-group">
                 <div class="input-box">
                     <input type="text"
-                    placeholder="Nombre Completo">
+                    placeholder="Nombre Completo" name="Nombre">
                     <input type="email"
-                    placeholder="Email">
+                    placeholder="Email" name=""Email>
                 </div>
                 <div class="input-box">
-                    <input type="email"
-                    placeholder="Sujeto">
+                    <input type="text"
+                    placeholder="Dirigido" name="Dirigido">
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="30"
+                <textarea name="Comentario" id="" cols="30"
                 rows="10" placeholder="Comentario"></textarea>
                 <input type="submit" value="Enviar Comentario" class="btn">
             </div>
