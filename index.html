@@ -254,22 +254,22 @@
         <form action="https://formsubmit.co/culturaecoactiva@gmail.com" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text"
-                    placeholder="Nombre Completo" name="Nombre">
-                    <input type="email"
-                    placeholder="Email" name=""Email>
+                    <input type="text" name="Nombre" placeholder="Nombre Completo" required>
+                    <input type="email" name="Email" placeholder="Correo electrónico" required>
                 </div>
                 <div class="input-box">
-                    <input type="text"
-                    placeholder="Dirigido" name="Dirigido">
+                    <input type="text" name="Dirigido" placeholder="Dirigido a" required>
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="Comentario" id="" cols="30"
-                rows="10" placeholder="Comentario"></textarea>
+                <textarea name="Comentario" cols="30" rows="10" placeholder="Comentario" required></textarea>
                 <input type="submit" value="Enviar Comentario" class="btn">
             </div>
+
+            <!-- Opcional: redirección y seguridad de formsubmit -->
+            <input type="hidden" name="_next" value="https://cverbglish.github.io/AguaUTL/gracias.html">
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </section>
 
@@ -304,5 +304,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
