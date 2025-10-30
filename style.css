@@ -407,7 +407,7 @@ span{
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
 }
 .service-info h4{
     font-size: 3rem;
@@ -672,5 +672,6 @@ span{
         height: 250px;
     }
 }
+
 
 
