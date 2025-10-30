@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por tu comentario</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f8f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            color: #2f4f4f;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
+        }
+
+        img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #1b7f5d;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #contador {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #1b7f5d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Gracias">
+        <h1>¡Gracias por tu comentario!</h1>
+        <p>Tu mensaje ha sido enviado con éxito 🌿</p>
+        <p id="contador">Redirigiendo a la página principal en <span id="segundos">5</span> segundos...</p>
+    </div>
+
+    <script>
+        let segundos = 5;
+        const contador = document.getElementById("segundos");
+
+        const intervalo = setInterval(() => {
+            segundos--;
+            contador.textContent = segundos;
+
+            if (segundos === 0) {
+                clearInterval(intervalo);
+                window.location.href = "https://cverbglish.github.io/AguaUTL/index.html"; // Cambia por la ruta de tu página principal
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
